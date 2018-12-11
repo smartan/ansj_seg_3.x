@@ -8,6 +8,7 @@
 	<version>3.7.6</version>
 	<description>best java chinese word seg ! </description>
 	<url>https://github.com/ansjsun/ansj_seg</url>
+
 	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>
@@ -16,39 +17,9 @@
 		</license>
 	</licenses>
 
-	<scm>
-		<connection>scm:git:git@github.com:ansjsun/ansj_seg.git</connection>
-		<developerConnection>scm:git:git@github.com:ansjsun/ansj_seg.git</developerConnection>
-		<url>git@github.com:ansjsun/ansj_seg.git</url>
-	</scm>
-
-
-	<developers>
-		<developer>
-			<id>ansj</id>
-			<name>ansj</name>
-			<email>ansj-sun@163.com</email>
-		</developer>
-	</developers>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
-	<distributionManagement>
-		<repository>
-			<id>mvn-repo</id>
-			<url>scpexe://ansj/home/mvn-repo/ROOT</url>
-		</repository>
-	</distributionManagement>
-
-	<repositories>
-		<repository>
-			<id>mvn-repo</id>
-			<url>http://maven.nlpcn.org/</url>
-		</repository>
-	</repositories>
-
 
 	<dependencies>
 		<dependency>
@@ -125,4 +96,12 @@
 			</extension>
 		</extensions>
 	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<name>Nexus Release Repository</name>
+			<url>http://maven.repos.husor.com/nexus/content/repositories/snapshots/</url>
+		</repository>
+	</distributionManagement>
 </project>
